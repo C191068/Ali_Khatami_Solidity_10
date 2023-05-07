@@ -105,6 +105,10 @@ Figure1: (msg.sender) is going to be equivalent the address of our wallet accoun
 as our metamask address is sending the ether we gonna add our metamask wallet address to the funders list<br>
 By this way we can keep tract of donators who are donating to our contract<br>
 
+in the above code by these lines  ```funders.push(msg.sender); addressToAmountFunded[msg.sender] = msg.value;``` of ```fund``` function <br>
+we can keep track of the people who are actually funding our contract <br>
+
+
 
 
 
