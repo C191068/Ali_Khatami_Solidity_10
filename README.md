@@ -11,6 +11,7 @@ We will keep adding all the funders who send money to us<br>
 
 ```
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -25,7 +26,7 @@ contract akrkFundMe  {
 // we have use payable keyword with the function below to make it payable with any native blockchain currency
     //below we have done mapping of addresses to how much money each of the people sent
     mapping(addresses => uint256) public addressToAmountFunded ;
-     
+
     function fund() public payable {
      
      //as we want to convert msg.value to USD we made the following changes
@@ -35,6 +36,7 @@ contract akrkFundMe  {
         // if not it is going to revert with an error messsage shown above
         //adding funders to the array 
          funders.push(msg.sender);
+         addressToAmountFunded[msg.sender] = msg.value;// It is for when somebody funds our contract
 
     }// To send money. We made it public so that anybody can call it
 
@@ -85,6 +87,7 @@ contract akrkFundMe  {
     
 
 }
+
 
 ```
 
