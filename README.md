@@ -97,6 +97,8 @@ like ```msg.value``` , ```msg.sender```  is an always available global keyword<b
 Figure1: (msg.sender) is going to be equivalent the address of our wallet account at metamask as it is calling the fund functtion<br>
 
 as our metamask address is sending the ether we gonna add our metamask wallet address to the funders list<br>
+By this way we can keep tract of donators who are donating to our contract<br>
+
 
 
 
