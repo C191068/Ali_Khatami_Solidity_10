@@ -31,7 +31,7 @@ contract akrkFundMe  {
         //require is a checker it checks whether the value is greater than 1 ether
         // if not it is going to revert with an error messsage shown above
         //adding funders to the array 
-         funders.push(msg.funder);
+         funders.push(msg.sender);
 
     }// To send money. We made it public so that anybody can call it
 
@@ -82,6 +82,7 @@ contract akrkFundMe  {
     
 
 }
+
 
 ```
 
