@@ -21,7 +21,7 @@ contract akrkFundMe  {
 
     uint256 public minimumUSD=50 * 1e18; //as getConversionRate() returns 18 zeroes after decimel place
  
-    address[] public funders;// we create an address array make it public to keep  keep adding all the funders who send money to us
+    address[] public funders;// we create an address array make it public 
 // we have use payable keyword with the function below to make it payable with any native blockchain currency
     function fund() public payable {
      
@@ -36,7 +36,8 @@ contract akrkFundMe  {
   //The function below is created so that we can get price of ethereum in terms of USD , so that we can convert msg.value to USD
 //Both functions are public because we can do whatever we want with them
 //By using the getPrice() function below we are going to interact with contract outside of our project
-
+  //adding funders to the array 
+   funders.push(msg.funder);
     function getPrice() public view returns(uint256) {
 
         //ABI
