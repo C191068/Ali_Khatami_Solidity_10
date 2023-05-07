@@ -89,4 +89,7 @@ contract akrkFundMe  {
 
 like ```msg.value``` , ```msg.sender```  is an always available global keyword<br>
 
+```msg.value``` stands for how much ethereum or how much native blockchain currency is sent <br>
+
+
 
