@@ -30,14 +30,16 @@ contract akrkFundMe  {
         //1e18 is 1 ether, here the value must be greater than 1 ether
         //require is a checker it checks whether the value is greater than 1 ether
         // if not it is going to revert with an error messsage shown above
+        //adding funders to the array 
+         funders.push(msg.funder);
 
     }// To send money. We made it public so that anybody can call it
 
   //The function below is created so that we can get price of ethereum in terms of USD , so that we can convert msg.value to USD
 //Both functions are public because we can do whatever we want with them
 //By using the getPrice() function below we are going to interact with contract outside of our project
-  //adding funders to the array 
-   funders.push(msg.funder);
+  
+  
     function getPrice() public view returns(uint256) {
 
         //ABI
@@ -82,3 +84,6 @@ contract akrkFundMe  {
 }
 
 ```
+
+
+like 
