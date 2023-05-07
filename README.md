@@ -87,4 +87,6 @@ contract akrkFundMe  {
 ```
 
 
-like 
+like ```msg.value``` , ```msg.sender```  is an always available global keyword<br>
+
+
