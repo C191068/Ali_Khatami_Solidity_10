@@ -23,6 +23,9 @@ contract akrkFundMe  {
  
     address[] public funders;// we create an address array make it public 
 // we have use payable keyword with the function below to make it payable with any native blockchain currency
+    //below we have done mapping of addresses to how much money each of the people sent
+    mapping(addresses => uint256) public addressToAmountFunded ;
+     
     function fund() public payable {
      
      //as we want to convert msg.value to USD we made the following changes
@@ -82,7 +85,6 @@ contract akrkFundMe  {
     
 
 }
-
 
 ```
 
