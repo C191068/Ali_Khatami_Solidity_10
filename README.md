@@ -91,5 +91,9 @@ like ```msg.value``` , ```msg.sender```  is an always available global keyword<b
 
 ```msg.value``` stands for how much ethereum or how much native blockchain currency is sent <br>
 
+```msg.sender``` is the address of whoever calls the fund function<br>
+
+
+
 
 
