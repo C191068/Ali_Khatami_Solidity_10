@@ -6,3 +6,6 @@ When people actually send money to the contract created at this link https://git
 And we want to keep track of all people who send us money<br>
 
 For that at first we need the data structure ```array```  and we will create array of addresses called ```funders``` <br>
+
+We will keep adding all the funders who send money to us<br>
+
