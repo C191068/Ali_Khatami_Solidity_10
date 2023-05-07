@@ -93,6 +93,9 @@ like ```msg.value``` , ```msg.sender```  is an always available global keyword<b
 
 ```msg.sender``` is the address of whoever calls the fund function<br>
 
+![f69](https://user-images.githubusercontent.com/89090776/236680143-41275d6b-1bf7-4739-af45-ab87dc065f50.jpg)
+Figure1: (msg.sender) is going to be equivalent the address of our wallet account at metamask<br>
+
 
 
 
